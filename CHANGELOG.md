@@ -2,6 +2,13 @@
 
 All notable changes to the EDGE AI LABORATORY website are documented here.
 
+## [1.2.0] - 2026-07-26
+
+### Added
+- Google Analytics 4 tracking
+- Google tag using measurement ID `G-TET77L7Z8R`
+- Site-wide page-view and enhanced measurement support
+
 ## [1.1.1] - 2026-07-26
 
 ### Fixed

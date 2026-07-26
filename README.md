@@ -15,7 +15,13 @@ Official source code for the EDGE AI LABORATORY website.
 
 ## Version
 
-Current release: **v1.1.1**
+Current release: **v1.2.0**
+
+### v1.2.0 — Google Analytics 4
+
+- Added Google Analytics 4
+- Added Google tag measurement ID `G-TET77L7Z8R`
+- Enabled page-view and enhanced measurement collection
 
 ### v1.1.1 — Footer Restoration
 
