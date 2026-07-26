@@ -1,0 +1,340 @@
+
+:root{--navy:#031429;--navy2:#061e3a;--panel:#092746;--cyan:#32d9ff;--cyan2:#00a9d6;--white:#f6fbff;--text:#0b2340;--muted:#66798d;--line:rgba(50,217,255,.18)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;color:var(--text);background:#fff;line-height:1.8}a{text-decoration:none;color:inherit}img{max-width:100%}.container{width:min(1180px,calc(100% - 48px));margin:auto}
+.site-header{height:86px;position:fixed;z-index:30;top:0;left:0;right:0;background:rgba(255,255,255,.96);border-bottom:1px solid #e5edf4;backdrop-filter:blur(12px)}.header-shell{height:100%;width:min(1430px,calc(100% - 56px));margin:auto;display:flex;align-items:center;gap:34px}.brand{width:238px;display:block}.brand img{display:block;width:100%}.main-nav{margin-left:auto;height:100%;display:flex;align-items:center;gap:34px;font-size:14px;font-weight:700;white-space:nowrap}.main-nav a{height:100%;display:flex;align-items:center;position:relative}.main-nav a:after{content:"";position:absolute;left:50%;right:50%;bottom:0;height:3px;background:var(--cyan2);transition:.25s}.main-nav a:hover,.main-nav a.active{color:#008fc4}.main-nav a:hover:after,.main-nav a.active:after{left:0;right:0}.ameblo-button{background:#06264c;color:#fff;border-radius:7px;padding:12px 18px;font-size:13px;font-weight:700;box-shadow:0 8px 24px rgba(3,20,41,.14)}.ameblo-button span{color:var(--cyan)}.menu-toggle{display:none}
+.hero{min-height:750px;padding-top:86px;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 30%,#083762 0,#031a33 38%,#020f20 76%);color:#fff}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,15,32,.95) 0%,rgba(2,15,32,.83) 40%,rgba(2,15,32,.23) 75%,rgba(2,15,32,.38) 100%)}.hero-network{position:absolute;inset:86px 0 0 35%;background:url("assets/network-bg.svg") center/cover no-repeat;opacity:.95}.hero-grid{position:relative;z-index:2;min-height:664px;display:grid;grid-template-columns:1.15fr .65fr;align-items:center;gap:60px}.hero-copy{padding:62px 0}.hero-logo{width:455px;max-width:80%;filter:brightness(0) invert(1);opacity:.96;margin-bottom:14px}.hero-label{font-size:11px;letter-spacing:.18em;color:#63def4;font-weight:700}.hero h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(36px,4vw,55px);line-height:1.55;letter-spacing:.035em;font-weight:500;margin:25px 0 20px}.hero h1 em{font-style:normal}.hero-copy>p:not(.hero-label){max-width:730px;color:#d4e2ee;font-size:15px;line-height:2}.hero-actions{margin-top:30px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}.outline-button{border:1px solid var(--cyan);border-radius:5px;color:var(--cyan);padding:13px 28px;font-weight:700;transition:.25s}.outline-button:hover{background:var(--cyan);color:#02152a}.outline-button span{font-size:24px;margin-left:22px}.plain-link{font-size:13px;color:#dcebf4}.hero-orbit{width:340px;height:340px;position:relative;justify-self:center;opacity:.68}.core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:108px;height:108px;border:1px solid rgba(50,217,255,.65);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 50px rgba(50,217,255,.25),inset 0 0 30px rgba(50,217,255,.1)}.core span{font-size:36px;font-weight:300;letter-spacing:.1em}.core small{font-size:9px;letter-spacing:.3em;color:var(--cyan)}.orbit{position:absolute;border:1px solid rgba(50,217,255,.32);border-radius:50%;inset:35px}.orbit-b{inset:0;transform:rotate(55deg) scaleY(.65)}.orbit-a{transform:rotate(-30deg) scaleY(.72)}.node{width:9px;height:9px;border-radius:50%;background:var(--cyan);position:absolute;box-shadow:0 0 18px var(--cyan)}.n1{left:43px;top:99px}.n2{right:25px;top:167px}.n3{left:142px;bottom:6px}.n4{right:92px;top:31px}.scroll-guide{position:absolute;z-index:3;bottom:24px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.22em;color:#98b8ca;display:flex;flex-direction:column;align-items:center}.scroll-guide i{width:1px;height:35px;margin-top:8px;background:linear-gradient(var(--cyan),transparent)}
+.research-section{padding:85px 0 105px;color:#fff;background:linear-gradient(180deg,#03182f,#041c36)}.section-heading{text-align:center;max-width:720px;margin:0 auto 48px}.section-heading span,.eyebrow{font-size:11px;letter-spacing:.2em;color:var(--cyan2);font-weight:800}.section-heading h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:40px;font-weight:500;letter-spacing:.08em;margin:5px 0 12px}.section-heading h2:after{content:"";display:block;width:48px;height:2px;background:var(--cyan);margin:14px auto}.section-heading p{color:#aabccc;font-size:14px}.research-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:17px}.research-card{min-height:315px;padding:30px 24px 25px;position:relative;border:1px solid rgba(85,185,225,.25);border-radius:9px;background:linear-gradient(145deg,rgba(13,52,87,.86),rgba(7,34,64,.93));transition:.3s}.research-card:hover{transform:translateY(-7px);border-color:rgba(50,217,255,.7);box-shadow:0 20px 45px rgba(0,0,0,.24)}.research-card img{width:53px;height:53px;filter:invert(82%) sepia(65%) saturate(1457%) hue-rotate(149deg) brightness(100%);margin-bottom:18px}.card-no{position:absolute;right:20px;top:17px;font-size:10px;letter-spacing:.15em;color:#5d7990}.research-card h3{font-size:18px;margin:0 0 15px}.research-card p{font-size:13px;color:#c5d4df;line-height:1.9;margin:0}.research-card a{position:absolute;bottom:19px;left:24px;color:var(--cyan);font-size:23px}
+.principles{padding:105px 0;background:#f4f8fb}.principles-grid{display:grid;grid-template-columns:1fr 1fr;gap:105px;align-items:center}.principles-copy h2,.book-copy h2,.profile-copy h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:41px;line-height:1.55;margin:10px 0 22px;font-weight:500}.principles-copy p,.book-copy p,.profile-copy p{color:var(--muted)}.principle-list>div{display:grid;grid-template-columns:54px 1fr;column-gap:18px;padding:22px 0;border-bottom:1px solid #dce7ee}.principle-list b{grid-row:1/3;font-size:12px;color:var(--cyan2)}.principle-list h3{margin:0;font-size:20px}.principle-list p{margin:3px 0;color:var(--muted);font-size:14px}
+.articles-section{padding:100px 0}.section-heading.left{text-align:left;margin-left:0}.section-heading.left h2:after{margin-left:0}.article-grid{display:grid;grid-template-columns:1.5fr .75fr .75fr;gap:18px}.article-card{min-height:270px;padding:28px;border:1px solid #dce7ee;border-radius:8px;display:flex;flex-direction:column;justify-content:space-between;transition:.3s;background:#fff}.article-card:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(4,28,54,.1)}.article-card span{color:#008ebd;font-size:10px;letter-spacing:.15em;font-weight:800}.article-card h3{font-size:20px;line-height:1.6}.article-card p{color:var(--muted)}.article-card b{font-size:13px;color:#007fa9}.article-card.featured{color:#fff;border:0;background:linear-gradient(135deg,#062649,#054d6c)}.article-card.featured span,.article-card.featured b{color:var(--cyan)}.article-card.featured h3{font-family:"Yu Mincho",serif;font-size:28px;font-weight:500}.article-card.featured p{color:#c8d8e4}
+.book-section{padding:100px 0;color:#fff;background:#031429}.book-layout{display:grid;grid-template-columns:1fr .65fr;gap:100px;align-items:center}.book-copy p{color:#b9cbd8}.book-mock{min-height:360px;padding:46px 38px;position:relative;background:linear-gradient(145deg,#0b5371,#061e3a);box-shadow:25px 28px 0 #051b32,0 30px 70px rgba(0,0,0,.35);border-left:7px solid #18c1dc}.book-mock:before{content:"";position:absolute;right:25px;top:28px;width:110px;height:110px;border-radius:50%;border:1px solid rgba(50,217,255,.28)}.book-mock small{color:var(--cyan);letter-spacing:.18em}.book-mock h3{font-family:"Yu Mincho",serif;font-size:25px;line-height:1.7;margin-top:50px}.book-mock p{color:#bcd0db}.book-mock i{position:absolute;bottom:30px;font-style:normal;font-size:10px;letter-spacing:.17em}
+.profile-section{padding:105px 0}.profile-layout{display:grid;grid-template-columns:250px 1fr;gap:75px;align-items:center;max-width:930px}.profile-mark{width:215px;height:215px;background:linear-gradient(145deg,#06395d,#008e9d);clip-path:polygon(25% 0,75% 0,100% 25%,100% 75%,75% 100%,25% 100%,0 75%,0 25%);display:grid;place-items:center;color:#fff;font-family:serif;font-size:56px;letter-spacing:.08em}.profile-copy h2{margin-bottom:0}.profile-copy h3{font-size:14px;color:#33728d;margin:0 0 20px}.profile-copy a{color:#008fbf;font-weight:700;font-size:13px}
+.contact-section{padding:0 0 100px}.contact-panel{padding:55px 60px;background:linear-gradient(120deg,#052849,#075b74);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:30px;border-radius:8px}.contact-panel h2{font-family:"Yu Mincho",serif;font-size:30px;font-weight:500;margin:5px 0}.contact-panel p{color:#c7dbe5;margin:0}.contact-panel>a{min-width:280px;padding:17px 20px;border:1px solid rgba(255,255,255,.35);display:flex;justify-content:space-between}.contact-panel>a span{color:var(--cyan)}
+footer{padding:35px 0;background:#020e1d;color:#a9bdcc}.footer-grid{display:grid;grid-template-columns:280px 1fr auto;gap:50px;align-items:center}.footer-grid img{width:230px;filter:brightness(0) invert(1);opacity:.88}.footer-grid div{display:flex;gap:25px;font-size:12px}.footer-grid p{font-size:11px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:1100px){.main-nav{gap:18px}.ameblo-button{display:none}.research-grid{grid-template-columns:repeat(3,1fr)}.article-grid{grid-template-columns:1fr 1fr}.article-card.featured{grid-column:1/3}.hero-orbit{display:none}.hero-grid{grid-template-columns:1fr}.hero-copy{max-width:820px}.hero-network{left:25%;opacity:.58}}
+@media(max-width:780px){.container{width:min(100% - 30px,1180px)}.site-header{height:72px}.header-shell{width:calc(100% - 28px)}.brand{width:190px}.menu-toggle{display:flex;margin-left:auto;border:0;background:none;flex-direction:column;gap:4px;align-items:flex-end}.menu-toggle span{display:block;width:26px;height:2px;background:#073052}.menu-toggle b{font-size:8px;color:#47667c}.main-nav{position:absolute;display:none;top:72px;left:0;right:0;height:auto;padding:22px;background:#fff;flex-direction:column;align-items:stretch;box-shadow:0 14px 30px rgba(0,0,0,.12)}.main-nav.open{display:flex}.main-nav a{height:auto;padding:8px}.hero{padding-top:72px;min-height:720px}.hero-grid{min-height:648px}.hero-copy{padding:55px 0}.hero-logo{max-width:95%}.hero h1{font-size:34px}.hero-network{inset:72px -250px 0 20%;opacity:.4}.research-grid{grid-template-columns:1fr 1fr}.principles-grid,.book-layout,.profile-layout{grid-template-columns:1fr;gap:45px}.profile-mark{width:160px;height:160px}.article-grid{grid-template-columns:1fr}.article-card.featured{grid-column:auto}.contact-panel{padding:38px 27px;align-items:flex-start;flex-direction:column}.contact-panel>a{min-width:0;width:100%}.footer-grid{grid-template-columns:1fr}.footer-grid div{flex-wrap:wrap}}
+@media(max-width:520px){.research-grid{grid-template-columns:1fr}.hero-label{font-size:9px}.hero h1{font-size:29px}.hero-copy>p:not(.hero-label){font-size:14px}.hero-actions{align-items:flex-start;flex-direction:column}.section-heading h2,.principles-copy h2,.book-copy h2,.profile-copy h2{font-size:32px}.book-mock{min-height:330px}.profile-layout{text-align:center}.profile-mark{margin:auto}.footer-grid{text-align:center}.footer-grid img{margin:auto}.footer-grid div{justify-content:center}}
+
+
+/* v3: Projects, enhanced profile and social links */
+.projects-section{padding:100px 0;background:#f6f9fc}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project-card{min-height:320px;padding:34px;border:1px solid #d9e6ee;border-radius:9px;background:#fff;display:flex;flex-direction:column;transition:.3s}
+.project-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(4,28,54,.10);border-color:#71cce2}
+.project-card>span{font-size:10px;letter-spacing:.18em;color:#0098bf;font-weight:800}
+.project-card h3{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:25px;font-weight:500;line-height:1.5;margin:20px 0 15px}
+.project-card p{color:var(--muted);font-size:14px;flex:1}
+.project-card div{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.project-card div b{font-size:10px;letter-spacing:.04em;padding:6px 10px;border-radius:20px;background:#eef8fb;color:#087894}
+
+.profile-section{position:relative;padding:105px 0;background:linear-gradient(135deg,#031429 0%,#041d39 58%,#062d4b 100%);color:#fff;overflow:hidden}
+.profile-section:before{content:"";position:absolute;inset:0;background:url("assets/network-bg.svg") 72% 40%/1050px auto no-repeat;opacity:.24}
+.profile-section .container{position:relative;z-index:1}
+.profile-hero{display:grid;grid-template-columns:1.05fr .75fr;gap:85px;align-items:center}
+.profile-copy h2{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:51px;letter-spacing:.08em;font-weight:700;margin:9px 0 4px}
+.profile-copy h3{font-size:22px;color:#fff;font-weight:500;margin:0 0 2px;letter-spacing:.03em}
+.profile-copy h4{font-size:19px;color:var(--cyan);font-weight:500;margin:0 0 30px;letter-spacing:.04em}
+.profile-copy>p{max-width:690px;color:#d0dee8;font-size:15px;line-height:2}
+.profile-links{display:flex;gap:14px;align-items:center;margin:30px 0 38px;flex-wrap:wrap}
+.profile-links a{display:inline-flex;align-items:center;gap:9px;min-height:45px;padding:9px 17px;border:1px solid rgba(255,255,255,.25);border-radius:5px;color:#e9f6fc;font-size:13px;font-weight:700;transition:.25s}
+.profile-links a:hover{border-color:var(--cyan);color:var(--cyan)}
+.profile-links .linkedin-link{background:#0a66c2;border-color:#0a66c2;color:#fff}
+.linkedin-icon{display:grid;place-items:center;width:23px;height:23px;border-radius:3px;background:#fff;color:#0a66c2;font-family:Arial,sans-serif;font-weight:800;font-size:15px}
+.role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(85,185,225,.26)}
+.role-grid>div{padding:24px 22px 0 0}
+.role-grid b{font-size:10px;color:var(--cyan);letter-spacing:.15em}
+.role-grid h5{font-size:14px;margin:5px 0;color:#fff}
+.role-grid p{font-size:12px;line-height:1.75;color:#aebfcb;margin:0}
+.profile-photo-wrap{height:610px;position:relative;display:flex;align-items:flex-end;justify-content:center}
+.profile-photo-wrap:before{content:"";position:absolute;inset:45px 0 0;border:1px solid rgba(50,217,255,.25);border-radius:32px;background:linear-gradient(180deg,rgba(3,27,52,.08),rgba(3,20,41,.48));box-shadow:inset 0 0 70px rgba(50,217,255,.05)}
+.profile-photo-wrap img{position:relative;z-index:2;width:min(100%,455px);height:570px;object-fit:cover;object-position:center 20%;border-radius:26px 26px 12px 12px;box-shadow:0 30px 70px rgba(0,0,0,.35)}
+.profile-photo-grid{position:absolute;z-index:1;inset:15% -8% 0 18%;border-radius:50%;background:radial-gradient(circle,rgba(50,217,255,.18),transparent 66%);filter:blur(7px)}
+.research-interests{margin-top:68px;padding-top:27px;border-top:1px solid rgba(85,185,225,.25)}
+.research-interests>span{display:block;font-size:11px;letter-spacing:.2em;color:var(--cyan);font-weight:800;margin-bottom:18px}
+.interest-tags{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.interest-tags b{min-height:60px;display:flex;align-items:center;justify-content:center;text-align:center;padding:11px;border:1px solid rgba(85,185,225,.28);border-radius:8px;background:rgba(3,23,44,.54);font-size:13px;font-weight:500;color:#e6f5fb;transition:.25s}
+.interest-tags b:hover{border-color:var(--cyan);background:rgba(5,55,82,.72)}
+
+@media(max-width:1100px){
+  .project-grid{grid-template-columns:1fr 1fr}
+  .profile-hero{grid-template-columns:1fr .72fr;gap:45px}
+  .role-grid{grid-template-columns:1fr}
+  .role-grid>div{padding-bottom:16px}
+}
+@media(max-width:780px){
+  .project-grid{grid-template-columns:1fr}
+  .profile-hero{grid-template-columns:1fr}
+  .profile-photo-wrap{height:520px;order:-1}
+  .profile-photo-wrap img{height:500px;width:min(100%,400px)}
+  .profile-copy{text-align:left}
+  .role-grid{grid-template-columns:1fr}
+  .interest-tags{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+  .profile-section{padding:78px 0}
+  .profile-photo-wrap{height:430px}
+  .profile-photo-wrap img{height:410px}
+  .profile-copy h2{font-size:38px}
+  .profile-copy h3{font-size:17px}
+  .profile-copy h4{font-size:16px}
+  .profile-links{align-items:stretch;flex-direction:column}
+  .profile-links a{justify-content:center}
+  .interest-tags{grid-template-columns:1fr}
+}
+
+
+/* v5: V3 color palette, clean hero, compact profile */
+.hero-copy{padding-top:88px}
+.hero-copy .hero-label{margin-top:0}
+.secondary-button{
+  border:1px solid rgba(255,255,255,.66);
+  border-radius:5px;
+  color:#fff;
+  padding:13px 28px;
+  font-weight:700;
+  transition:.25s
+}
+.secondary-button:hover{
+  border-color:var(--cyan);
+  color:var(--cyan);
+  background:rgba(3,31,55,.45)
+}
+.secondary-button span{font-size:24px;margin-left:22px}
+
+.profile-section{
+  position:relative;
+  padding:95px 0;
+  background:linear-gradient(135deg,#031429 0%,#041d39 58%,#062d4b 100%);
+  color:#fff;
+  overflow:hidden
+}
+.profile-section:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("assets/network-bg.svg") 78% 48%/900px auto no-repeat;
+  opacity:.16
+}
+.profile-section .container{position:relative;z-index:1}
+.profile-compact{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:48px;
+  align-items:center;
+  max-width:980px
+}
+.profile-photo-small{
+  width:210px;
+  height:260px;
+  position:relative
+}
+.profile-photo-small:before{
+  content:"";
+  position:absolute;
+  inset:-10px;
+  border:1px solid rgba(50,217,255,.28);
+  border-radius:18px;
+  background:rgba(3,24,46,.35)
+}
+.profile-photo-small img{
+  position:relative;
+  z-index:1;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 18%;
+  border-radius:14px;
+  box-shadow:0 20px 45px rgba(0,0,0,.32)
+}
+.profile-copy h2{
+  font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;
+  font-size:43px;
+  letter-spacing:.07em;
+  font-weight:700;
+  margin:8px 0 3px
+}
+.profile-copy h3{
+  font-size:20px;
+  color:#fff;
+  font-weight:500;
+  margin:0 0 1px
+}
+.profile-copy h4{
+  font-size:17px;
+  color:var(--cyan);
+  font-weight:500;
+  margin:0 0 24px
+}
+.profile-copy>p{
+  color:#d0dee8;
+  font-size:15px;
+  line-height:2;
+  max-width:700px
+}
+.profile-links{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-top:25px;
+  flex-wrap:wrap
+}
+.profile-links a{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  min-height:43px;
+  padding:8px 16px;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:5px;
+  color:#e9f6fc;
+  font-size:13px;
+  font-weight:700;
+  transition:.25s
+}
+.profile-links a:hover{border-color:var(--cyan);color:var(--cyan)}
+.profile-links .linkedin-link{
+  background:#0a66c2;
+  border-color:#0a66c2;
+  color:#fff
+}
+.linkedin-icon{
+  display:grid;
+  place-items:center;
+  width:23px;
+  height:23px;
+  border-radius:3px;
+  background:#fff;
+  color:#0a66c2;
+  font-family:Arial,sans-serif;
+  font-weight:800;
+  font-size:15px
+}
+.compact-roles{
+  margin-top:54px;
+  border-top:1px solid rgba(85,185,225,.26);
+  display:grid;
+  grid-template-columns:repeat(3,1fr)
+}
+.compact-roles>div{
+  padding:24px 28px 0 0
+}
+.compact-roles b{
+  font-size:10px;
+  color:var(--cyan);
+  letter-spacing:.15em
+}
+.compact-roles h5{
+  font-size:14px;
+  margin:5px 0;
+  color:#fff
+}
+.compact-roles p{
+  font-size:12px;
+  line-height:1.75;
+  color:#aebfcb;
+  margin:0
+}
+.research-interests{
+  margin-top:56px;
+  padding-top:24px;
+  border-top:1px solid rgba(85,185,225,.25)
+}
+.research-interests>span{
+  display:block;
+  font-size:11px;
+  letter-spacing:.2em;
+  color:var(--cyan);
+  font-weight:800;
+  margin-bottom:18px
+}
+.interest-tags{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px
+}
+.interest-tags b{
+  min-height:56px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:10px;
+  border:1px solid rgba(85,185,225,.28);
+  border-radius:8px;
+  background:rgba(3,23,44,.54);
+  font-size:13px;
+  font-weight:500;
+  color:#e6f5fb
+}
+
+@media(max-width:780px){
+  .profile-compact{
+    grid-template-columns:1fr;
+    gap:30px
+  }
+  .profile-photo-small{
+    width:170px;
+    height:210px
+  }
+  .compact-roles{
+    grid-template-columns:1fr
+  }
+  .interest-tags{
+    grid-template-columns:1fr 1fr
+  }
+}
+@media(max-width:520px){
+  .hero-copy{padding-top:56px}
+  .outline-button,.secondary-button{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+  }
+  .profile-photo-small{
+    width:145px;
+    height:180px
+  }
+  .profile-copy h2{font-size:36px}
+  .profile-copy h3{font-size:17px}
+  .profile-copy h4{font-size:15px}
+  .profile-links{
+    align-items:stretch;
+    flex-direction:column
+  }
+  .profile-links a{justify-content:center}
+  .interest-tags{grid-template-columns:1fr}
+}
+
+
+/* v5.1 footer refinements */
+.footer-logo-plate{
+  width:250px;
+  padding:9px 13px;
+  border-radius:7px;
+  background:#fff;
+  box-shadow:0 10px 28px rgba(0,0,0,.18);
+}
+.footer-logo-plate img{
+  display:block;
+  width:100%;
+  filter:none!important;
+  opacity:1!important;
+}
+.footer-grid p{
+  white-space:nowrap;
+}
+@media(max-width:780px){
+  .footer-logo-plate{
+    width:230px;
+  }
+  .footer-grid p{
+    white-space:normal;
+  }
+}
+@media(max-width:520px){
+  .footer-logo-plate{
+    margin:auto;
+    width:215px;
+  }
+}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+  <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#031429" stop-opacity="0"/>
+    <stop offset=".35" stop-color="#062344" stop-opacity=".35"/>
+    <stop offset="1" stop-color="#008bd2" stop-opacity=".18"/>
+  </linearGradient>
+  <radialGradient id="glow">
+    <stop offset="0" stop-color="#32d9ff" stop-opacity=".95"/>
+    <stop offset=".22" stop-color="#32d9ff" stop-opacity=".32"/>
+    <stop offset="1" stop-color="#32d9ff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#fade)"/>
+<g opacity=".26" stroke="#26cfff" stroke-width="2">
+  <path d="M650 170L780 245L920 160L1055 285L1190 205L1330 320L1495 210"/>
+  <path d="M705 405L835 315L980 415L1120 330L1260 470L1440 360"/>
+  <path d="M610 620L775 515L945 630L1115 535L1285 680L1510 550"/>
+  <path d="M780 245L835 315L705 405L775 515L610 620"/>
+  <path d="M920 160L980 415L945 630"/>
+  <path d="M1055 285L1120 330L1115 535"/>
+  <path d="M1190 205L1260 470L1285 680"/>
+  <path d="M1330 320L1440 360L1510 550"/>
+</g>
+<g fill="#7ce9ff">
+  <circle cx="650" cy="170" r="7"/><circle cx="780" cy="245" r="9"/><circle cx="920" cy="160" r="7"/>
+  <circle cx="1055" cy="285" r="10"/><circle cx="1190" cy="205" r="7"/><circle cx="1330" cy="320" r="9"/>
+  <circle cx="1495" cy="210" r="8"/><circle cx="705" cy="405" r="7"/><circle cx="835" cy="315" r="8"/>
+  <circle cx="980" cy="415" r="11"/><circle cx="1120" cy="330" r="8"/><circle cx="1260" cy="470" r="10"/>
+  <circle cx="1440" cy="360" r="8"/><circle cx="610" cy="620" r="7"/><circle cx="775" cy="515" r="9"/>
+  <circle cx="945" cy="630" r="8"/><circle cx="1115" cy="535" r="9"/><circle cx="1285" cy="680" r="8"/>
+  <circle cx="1510" cy="550" r="10"/>
+</g>
+<g opacity=".32">
+  <circle cx="1050" cy="420" r="240" fill="url(#glow)" filter="url(#blur)"/>
+  <circle cx="1375" cy="250" r="170" fill="url(#glow)" filter="url(#blur)"/>
+</g>
+<g fill="none" stroke="#19bde8" opacity=".23">
+  <path d="M520 690 Q850 420 1240 700 T1700 620" stroke-width="2"/>
+  <path d="M510 720 Q900 510 1260 730 T1700 660" stroke-width="1.4"/>
+  <path d="M500 750 Q880 590 1280 760 T1700 700" stroke-width="1"/>
+</g>
+</svg>
