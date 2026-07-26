@@ -2,6 +2,14 @@
 
 All notable changes to the EDGE AI LABORATORY website are documented here.
 
+## [1.1.1] - 2026-07-26
+
+### Fixed
+- Restored the latest footer design
+- Restored the official color logo on a white footer plate
+- Standardized the copyright name to `EDGE AI LABORATORY`
+- Preserved automatic copyright year display from 2024 to the current year
+
 ## [1.1.0] - 2026-07-26
 
 ### Added

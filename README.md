@@ -15,7 +15,13 @@ Official source code for the EDGE AI LABORATORY website.
 
 ## Version
 
-Current release: **v1.1.0**
+Current release: **v1.1.1**
+
+### v1.1.1 — Footer Restoration
+
+- Restored latest footer design
+- Official color logo on white plate
+- Corrected copyright branding and automatic year range
 
 ### v1.1.0 — SEO Foundation
 
