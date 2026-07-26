@@ -1,19 +1,49 @@
-# EDGEAI LABORATORY 静的サイト v5.1
+# EDGE AI LABORATORY Official Website
 
-## v5.1の変更点
-- フッターのロゴを、ヘッダー左上と同じ正式カラー版ロゴへ変更
-- フッターではロゴを白い角丸プレート上に表示
-- コピーライトの開始年を創業年の2024年へ変更
-- 現在年はJavaScriptで自動更新
-- 表示例：© 2024–2026 EDGEAI LABORATORY. All Rights Reserved.
-- ホーム、プロフィール、研究テーマなどの構成はV5を継承
+Official source code for the EDGE AI LABORATORY website.
 
-## 更新方法
-CORESERVERの `public_html` にある以下を上書きしてください。
-- index.html
-- style.css
-- script.js
+**Website:** https://edgeai-lab.com/
 
-`assets` フォルダはV5から変更ありませんが、一式を上書きしても問題ありません。
+## Research Areas
 
-更新後に古い表示が残る場合は、ブラウザで `Ctrl + F5` を押してください。
+- Edge AI
+- Local Generative AI
+- AI Agents
+- Hybrid Cloud
+- Retrieval-Augmented Generation (RAG)
+- Enterprise AI Infrastructure
+
+## Version
+
+Current release: **v1.1.0**
+
+### v1.1.0 — SEO Foundation
+
+- Favicon
+- Apple touch icon
+- `robots.txt`
+- `sitemap.xml`
+- Open Graph image and metadata
+- X/Twitter Card metadata
+- Canonical URL
+- Expanded SEO metadata
+
+See [CHANGELOG.md](CHANGELOG.md) for release history.
+
+## Deployment
+
+The production site is hosted on CORESERVER.
+
+Upload the contents of this repository to:
+
+```text
+domains/edgeai-lab.com/public_html/
+```
+
+Do not upload the ZIP file itself. Extract it first and upload the files and folders inside it.
+
+## Repository Policy
+
+GitHub is the authoritative source for the official website. CORESERVER is the production deployment destination.
+
+© 2024–2026 EDGE AI LABORATORY. All Rights Reserved.
