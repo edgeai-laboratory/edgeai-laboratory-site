@@ -377,3 +377,20 @@ footer{padding:35px 0;background:#020e1d;color:#a9bdcc}.footer-grid{display:grid
     margin-inline:auto;
   }
 }
+
+
+/* 2026-08-14 brand/content refinements */
+.profile-name-en{
+  font-size:.62em;
+  font-weight:500;
+  letter-spacing:.025em;
+  color:#d5e5ed;
+  white-space:nowrap;
+}
+@media(max-width:780px){
+  .profile-name-en{
+    display:block;
+    margin-top:6px;
+    font-size:.52em;
+  }
+}
