@@ -394,3 +394,23 @@ footer{padding:35px 0;background:#020e1d;color:#a9bdcc}.footer-grid{display:grid
     font-size:.52em;
   }
 }
+
+/* Publication launch and architecture introduction — 2026-10-24 */
+.architecture-intro{margin:24px 0;padding-left:18px;border-left:3px solid var(--cyan)}
+.architecture-intro h2{font:700 20px/1.4 "Yu Gothic",sans-serif;color:#54d7eb;margin:0 0 8px}
+.architecture-intro p{font-size:14px;line-height:1.8;color:#c3d6e3;margin:0;max-width:620px}
+.book-copy .publication-status{color:#67dbea;font-size:13px;letter-spacing:.04em}
+.book-copy h2{font:700 clamp(26px,3vw,36px)/1.55 "Yu Gothic",sans-serif}
+.book-copy .publication-subtitle{font-size:14px;color:#92dce6}
+.book-copy .publication-details{font-size:13px;line-height:1.8}
+.publication-cover{display:block;max-width:330px;justify-self:center;transition:transform .2s}
+.publication-cover:hover{transform:translateY(-4px)}
+.publication-cover img{display:block;width:100%;height:auto;box-shadow:0 18px 50px #0007}
+.publication-button{display:inline-block;margin-top:16px;padding:14px 20px;background:#20c1da;color:#031429!important;font-weight:700;border-radius:5px;line-height:1.6}
+.publication-button:focus-visible,.publication-cover:focus-visible{outline:3px solid #fff;outline-offset:6px}
+.profile-copy .profile-reading{font-size:14px;letter-spacing:.04em;margin:6px 0 16px}
+@media(max-width:780px){.publication-cover{max-width:280px}.book-layout{gap:36px}.publication-button{font-size:14px}.architecture-intro h2{font-size:18px}}
+
+/* Keep the cover intrinsic aspect ratio, including cached-style fallbacks. */
+.book-layout>.publication-cover{width:100%;max-width:330px;align-self:center;justify-self:center}
+.publication-cover img{width:100%;height:auto;aspect-ratio:992 / 1586;object-fit:contain}
